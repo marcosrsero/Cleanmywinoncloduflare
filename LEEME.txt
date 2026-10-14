@@ -1,0 +1,64 @@
+========================================================
+  CleanMyWin v2.0 - Mantenimiento y limpieza para Windows
+========================================================
+
+QUE ES
+------
+Una "navaja suiza" para tu PC con varios modulos independientes,
+cada uno con sus propios ajustes:
+
+  INICIO      Panel de control con acceso a todo y estadisticas.
+
+  DISCOS      Elige una unidad (C, D, E...), la escanea entera y
+              clasifica TODOS los archivos por tipo (Videos, Fotos,
+              Musica, Documentos, Juegos, Programas...). Muestra un
+              grafico circular interactivo del reparto del disco.
+              Pulsa una categoria para ver los archivos mas grandes,
+              abrir su ubicacion, enviarlos a la papelera o moverlos
+              a otra carpeta. Incluye vista de programas instalados.
+
+  LIMPIEZA    Elimina temporales, caches de navegadores, cache de
+              Windows Update y vacia la papelera.
+
+  CONFIG      Ajustes globales (carpeta destino para mover archivos),
+              tema de la aplicacion (claro / oscuro / segun el
+              sistema) y acceso al tutorial de bienvenida.
+
+
+PRIMERA VEZ
+-----------
+La primera vez que abras la aplicacion veras un breve tutorial que
+te explica como funciona cada modulo. Puedes volver a verlo cuando
+quieras desde Configuracion.
+
+
+COMO USARLA (facil)
+-------------------
+1. Haz doble clic en:   Ejecutar.bat
+2. Elige un modulo desde el panel de Inicio.
+
+
+CREAR UN .EXE (para abrirla sin Python)
+---------------------------------------
+1. Haz doble clic en:   Crear_EXE.bat
+2. Cuando termine, tu programa estara en:  dist\CleanMyWin.exe
+
+
+SI ALGO FALLA
+-------------
+Abre una terminal en esta carpeta y ejecuta:
+    py -m pip install --user -r requirements.txt
+
+O manualmente:
+    py -m pip install --user customtkinter send2trash pillow
+
+
+NOTAS
+-----
+- Los archivos borrados desde Discos van a la PAPELERA (recuperables).
+- La limpieza rapida borra PERMANENTEMENTE (solo temporales/caches).
+- Para analizar todo el disco C conviene ejecutarla como administrador.
+
+========================================================
+  (c) 2026 Marco's Utilities
+========================================================
